@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='css/style.css'/>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner" id="menu">
+            <div id="menuMobile" class="menuBurger__wrap" onclick="openMenu()"><button class="menuBurger"></button></div>
+            <div class="header__inner__searc header__inner__searchMobile">
+               
+            </div>
+            <div class="header__cont" >
+                
+                <div class="header__inner__item">
+                    <img src="img/logo.svg" alt="logo" class="header__inner__item__logo">
+                    <div id="open"  class="header__inner__item__list" onclick="openMode()">
+                        <img src="img/city.svg" alt="city" class="header__inner__item__list__img">
+                        <div class="header__inner__item__list__title">Moscow</div>
+
+                        <div id="f" class="header__inner__item__list__search">
+                            
+                            <div class="selectBlock">  
+                                <div class="active__wrap">
+
+                                <input  placeholder="Регион, город, населеный пункт" type="text" id="opt" class="header__inner__item__list__search__text"/> 
+                              
+                                <select size="280" id="name_ob" name="name_ob" class="header__inner__item__list__search__select">
+                                    
+                                </select>
+                                </div>
+                                <button class="selectBlock__btn" id="close" onclick="closeMode()">Сохранить</button>
+                            </div>
+                            
+
+                        </div> 
+                    </div>
+                </div>
+                <div class="header__inner__search">
+                    <img src="img/search.svg" alt="search" class="header__inner__search__img">
+                    <div class="header__inner__search__wrap">
+                        <a href="" target="_blank" hidden class="header__inner__search__link"></a>
+                        <input type="text" id="searchField" placeholder="Учебное заведение, специальность или профессия" class="header__inner__search__input"/>
+                        <div class="autocom-box">
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="header__inner__profile">
+                    <div class="header__inner__profile__like">
+                        <img src="img/heart.svg" alt="likes" class="header__inner__profile__like__img">
+                        <span class="header__inner__profile__like__count">1</span>
+                    </div>
+                    <div class="header__inner__profile__info">
+                        <div class="header__inner__profile__info__name">
+                            Екатерина
+                        </div>
+                        <div class="header__inner__profile__info__img">
+                            <img src="img/avatar.svg" alt="info" class="header__inner__profile__info__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <ul class="header__menu__list">
+                <button id="btnL" onclick="onMove(0, 'btnL')" class="btnMove"><</button>
+                <div class="header__menu__list__track">
+                    <li class="header__menu__list__item">Вузы</li>
+                    <li class="header__menu__list__item">Колледжи</li>
+                    <li class="header__menu__list__item">Техникумы</li>
+                    <li class="header__menu__list__item">Училища</li>
+                    <li class="header__menu__list__item">Специальности</li>
+                    <li class="header__menu__list__item">Профессии</li>
+                    <li class="header__menu__list__item">Отзывы</li>
+                    <li class="header__menu__list__item">Учебным заведениям</li>
+                    <li class="header__menu__list__item">Тест на профориентацию</li>
+                    <li class="header__menu__list__item">a</li>
+                    <li class="header__menu__list__item">b</li>
+                    <li class="header__menu__list__item">c</li>
+                    <li class="header__menu__list__item">d</li>
+                    <li class="header__menu__list__item">e</li>
+                </div>
+                <button id="btnR" onclick="onMove(390, 'btnR')" class="btnMove">></button>
+            </ul>
+        </div>
+    </header>
+    <section>
+        
+    </section>
+    <script src="js/script.js"></script>
+    <script src="modules/Search.js"></script>
+</body>
+</html>
